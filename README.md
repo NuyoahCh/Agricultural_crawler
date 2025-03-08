@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Agricultural_crawler
 农产品爬虫项目
 =======
@@ -19,7 +18,7 @@
 确保已安装Go 1.22或更高版本，然后克隆本仓库：
 
 ```bash
-git clone https://github.com/yourusername/Crawler.git
+git clone https://github.com/NuyoahCh/Agricultural_crawler.git
 cd Crawler
 ```
 
@@ -85,5 +84,4 @@ go build -o crawler
 
 ## 许可证
 
-MIT 
->>>>>>> 5cb46aa (Initial commit - create the project)
+MIT

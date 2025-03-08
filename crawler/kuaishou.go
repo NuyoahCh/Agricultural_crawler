@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"net/url"
+	_ "net/url"
 	"time"
 )
 
@@ -186,7 +186,7 @@ func (s *KuaishouScraper) GetUserVideos(userID string, cursor string) ([]*VideoD
 		Data struct {
 			VisionProfilePhotoList struct {
 				Pcursor string       `json:"pcursor"`
-				Feeds  []*VideoData `json:"feeds"`
+				Feeds   []*VideoData `json:"feeds"`
 			} `json:"visionProfilePhotoList"`
 		} `json:"data"`
 	}
