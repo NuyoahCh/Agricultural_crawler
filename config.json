@@ -1,0 +1,45 @@
+{
+  "platform": "douyin",
+  "concurrency": 5,
+  "timeout": 30,
+  "retries": 3,
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+  "output_dir": "output",
+  "db_config": {
+    "enabled": false,
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "password",
+    "database": "crawler_data"
+  },
+  "proxy_config": {
+    "enabled": false,
+    "type": "http",
+    "list": [
+      "http://127.0.0.1:7890",
+      "http://127.0.0.1:8080"
+    ],
+    "rotation_interval": 10
+  },
+  "rate_limit": {
+    "enabled": true,
+    "requests_per_minute": 30
+  },
+  "auto_cookie": {
+    "enabled": false,
+    "browser_type": "chrome",
+    "headless": true
+  },
+  "checkpoint": {
+    "enabled": true,
+    "interval": 10,
+    "file": "checkpoint.json"
+  },
+  "log_config": {
+    "level": "info",
+    "file": "crawler.log",
+    "console": true
+  }
+} 
